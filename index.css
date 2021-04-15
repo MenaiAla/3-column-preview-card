@@ -1,0 +1,95 @@
+:root {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  background-color: indigo;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card {
+  display: block;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.card--right {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card--right button {
+  color: hsl(179, 100%, 13%);
+}
+
+.card--left {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card--left button {
+  color: hsl(31, 77%, 52%);
+}
+
+.card--center {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card--center button {
+  color: hsl(184, 100%, 22%);
+}
+
+.card-image {
+  width: 3rem;
+}
+
+.card-title {
+  font-size: xx-large;
+  font-family: "Big Shoulders Display", cursive;
+  margin-top: 1em;
+  color: hsl(255, 100%, 100%);
+}
+
+.card-body {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 4rem;
+}
+
+.card-button {
+  width: auto;
+  padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.card-button:hover {
+  background-color: transparent;
+  color: hsl(255, 100%, 100%);
+  border: solid 1px hsl(255, 100%, 100%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .card {
+    line-height: 1.8em;
+  }
+}
