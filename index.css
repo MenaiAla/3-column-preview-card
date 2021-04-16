@@ -3,7 +3,8 @@
 }
 
 .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 50%;
   margin: 0 auto;
   border-radius: 8px;
